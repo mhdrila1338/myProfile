@@ -1,0 +1,47 @@
+.gradient-text {
+  /* gradient */
+  background: linear-gradient(90deg, #1e53f4 0%, #00aecb 100%) !important;
+
+  /* make the gradient show inside the letters */
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+
+  /* make text itself transparent so we see the background */
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+
+  /* help in some browsers if the element is block-level */
+  display: inline-block;
+}
+.about-left {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef7ff 100%);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(48, 64, 96, 0.08);
+  min-height: 320px; /* change if you want taller */
+}
+.contact-box {
+    transition: all 0.3s ease;
+}
+.contact-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+.mainBox{
+    background-color: azure;
+}
+
+footer a {
+    transition: 0.3s;
+}
+footer a:hover {
+    color: #0d6efd !important;
+}
+
+/* Optional: make badges a bit smaller on mobile */
+@media (max-width: 576px) {
+  .badge {
+    font-size: 0.85rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
